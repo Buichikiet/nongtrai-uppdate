@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>🌱 Nông Trại Vui Vẻ – Trang chủ</title>
+<meta name="description" content="Nông Trại Vui Vẻ – game nông trại online đa người chơi miễn phí! Trồng cây, nuôi cá, kết bạn, xây nhà, lái xe và hơn thế nữa.">
+<meta name="theme-color" content="#5fb84a">
+<link rel="icon" href="/icon-192.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">🌱 <span>Nông Trại Vui Vẻ</span></a>
+    <nav class="nav-links">
+      <a href="#features">Tính năng</a>
+      <a href="#screenshots">Hình ảnh</a>
+      <a href="#howto">Cách chơi</a>
+      <a href="#download">Tải game</a>
+      <a href="#donate">Ủng hộ</a>
+    </nav>
+    <a href="/play" class="btn btn-primary btn-sm">▶ Chơi ngay</a>
+    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="badge">🎉 Miễn phí 100% • Online Multiplayer</span>
+      <h1>Trồng cây, <span class="grad">nuôi cá</span>,<br>kết bạn khắp thế giới</h1>
+      <p class="lead">Nông Trại Vui Vẻ là game nông trại pixel đa nền tảng. Gieo hạt, thu hoạch, nấu ăn, câu cá, xây nhà, lái xe, sưu tầm thú cưng, đấu giá, sòng bạc và hơn <b>20+ NPC</b> đang chờ bạn!</p>
+      <div class="hero-cta">
+        <a href="/play" class="btn btn-primary btn-lg">▶ Chơi trên Web</a>
+        <a href="#download" class="btn btn-outline btn-lg">📱 Tải APK / iOS</a>
+      </div>
+      <div class="hero-stats">
+        <div><b id="stat-online">--</b><span>đang chơi</span></div>
+        <div><b>20+</b><span>NPC</span></div>
+        <div><b>50+</b><span>vật phẩm</span></div>
+        <div><b>∞</b><span>vui vẻ</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="pixel-box">
+        <div class="sky"></div>
+        <div class="ground"></div>
+        <div class="crops"><span>🌾</span><span>🌽</span><span>🥕</span><span>🍅</span></div>
+        <div class="farmer">🧑‍🌾</div>
+        <div class="pet">🐶</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <div class="container">
+    <h2 class="section-title">✨ Tính năng nổi bật</h2>
+    <p class="section-sub">Tất cả những gì bạn cần cho một nông trại hoàn hảo</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-ico">🌱</div>
+        <h3>Trồng trọt & Thu hoạch</h3>
+        <p>15+ loại cây: cà rốt, cà chua, dưa hấu, hoa hướng dương... Thu hoạch theo thời gian thực, nâng cấp nông trại thành đế chế.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🎣</div>
+        <h3>Câu cá & Săn bắt</h3>
+        <p>20+ loài cá, 4 cần câu, vựa cá riêng. Câu cá để nấu ăn hoặc bán kiếm xu.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🍳</div>
+        <h3>Nấu ăn & Chế biến</h3>
+        <p>Nhà bếp với 12+ công thức. Pizza, sushi, bánh mì, cocktail... Tăng XP và hồi máu.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🏠</div>
+        <h3>Xây nhà & Nội thất</h3>
+        <p>Nâng cấp nhà 5 cấp, trang trí 30+ đồ nội thất. Mời bạn bè đến chơi.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🚗</div>
+        <h13>Xe & Phương tiện</h13>
+        <p>10+ loại xe: xe đạp, xe máy, ô tô, máy bay. Di chuyển nhanh giữa các map.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🐾</div>
+        <h3>Thú cưng</h3>
+        <p>12+ thú cưng: chó, mèo, thỏ, khỉ, rồng nhỏ. Đi theo bạn khắp nơi, tăng chỉ số.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">👥</div>
+        <h3>Online Multiplayer</h3>
+        <p>WebSocket thời gian thực. Thấy bạn bè di chuyển, chat, tặng quà, đấu giá.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🎰</div>
+        <h3>Sòng bạc & Mini-game</h3>
+        <p>Xèng quay, tài xỉu, đua xe, đấu boss. Cơ hội nhân đôi xu mỗi ngày.</p>
+      </div>
+      <div class="card">
+        <div class="card-ico">🏆</div>
+        <h3>Nhiệm vụ & Thành tựu</h3>
+        <p>50+ nhiệm vụ hằng ngày, hệ thống danh hiệu, bảng xếp hạng top tuần.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section id="screenshots" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">📸 Hình ảnh trong game</h2>
+    <p class="section-sub">Pixel art đáng yêu, gameplay cuốn hút</p>
+    <div class="screenshots">
+      <div class="shot"><div class="shot-img s1">🌾</div><span>Nông trại</span></div>
+      <div class="shot"><div class="shot-img s2">🐟</div><span>Câu cá</span></div>
+      <div class="shot"><div class="shot-img s3">🍕</div><span>Nấu ăn</span></div>
+      <div class="shot"><div class="shot-img s4">🏆</div><span>Sự kiện</span></div>
+      <div class="shot"><div class="shot-img s5">👥</div><span>Bạn bè</span></div>
+      <div class="shot"><div class="shot-img s6">🌙</div><span>Đêm khuya</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO PLAY -->
+<section id="howto" class="section">
+  <div class="container">
+    <h2 class="section-title">🎮 Cách chơi</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Đăng nhập</h3>
+        <p>Dùng Google, Discord hoặc chơi thử không cần đăng ký.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Tạo nhân vật</h3>
+        <p>Chọn tên, màu da, kiểu tóc, quần áo, giày, túi xách.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Gieo hạt</h3>
+        <p>Nhận 5 hạt cà rốt miễn phí. Gieo, tưới, chờ thu hoạch.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Kết bạn & Vui chơi</h3>
+        <p>Mời bạn bè, tham gia sự kiện, leo top, xây dựng đế chế!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">📱 Tải game miễn phí</h2>
+    <p class="section-sub">Chơi trên mọi thiết bị – đồng bộ dữ liệu tự động</p>
+    <div class="download-grid">
+      <a class="dl-card dl-android" href="#" id="dl-apk">
+        <div class="dl-ico">🤖</div>
+        <h3>Android APK</h3>
+        <p>Phiên bản 1.0.0 • ~15MB</p>
+        <span class="dl-btn">Tải về APK</span>
+      </a>
+      <a class="dl-card dl-ios" href="#" id="dl-ipa">
+        <div class="dl-ico">🍎</div>
+        <h3>iOS (TestFlight)</h3>
+        <p>Phiên bản 1.0.0 • ~20MB</p>
+        <span class="dl-btn">Tải qua TestFlight</span>
+      </a>
+      <a class="dl-card dl-web" href="/play">
+        <div class="dl-ico">🌐</div>
+        <h3>Web Browser</h3>
+        <p>Chơi ngay không cần cài</p>
+        <span class="dl-btn">Vào chơi</span>
+      </a>
+    </div>
+    <p class="muted center">📥 Hướng dẫn cài đặt: <a href="/tai-game.html">tai-game.html</a></p>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section id="donate" class="section donate-section">
+  <div class="container">
+    <h2 class="section-title">💝 Ủng hộ phát triển game</h2>
+    <p class="section-sub">Mỗi đóng góp của bạn giúp server hoạt động và phát triển thêm tính năng mới</p>
+    <div class="donate-grid">
+      <div class="donate-card">
+        <h3>🏦 Chuyển khoản ngân hàng</h3>
+        <ul>
+          <li><b>Ngân hàng:</b> MB Bank</li>
+          <li><b>Số TK:</b> 00180599999998</li>
+          <li><b>Chủ TK:</b> BUI CHI KIET</li>
+          <li><b>Nội dung:</b> UNGHO [Mã game của bạn]</li>
+        </ul>
+        <p class="muted">🎁 Tặng ngay 500 xu trong game khi ủng hộ ≥ 50.000đ</p>
+      </div>
+      <div class="donate-card">
+        <h3>⭐ Mua Xu trong game</h3>
+        <p>Mở game → NPC <b>Donate (💝)</b> → Chọn gói</p>
+        <ul>
+          <li>💎 100.000 xu – 50.000đ</li>
+          <li>💎 500.000 xu – 200.000đ</li>
+          <li>💎 1.000.000 xu – 350.000đ</li>
+        </ul>
+      </div>
+      <div class="donate-card">
+        <h3>💬 Discord</h3>
+        <p>Tham gia cộng đồng để nhận thông báo sự kiện và quà tặng miễn phí mỗi tuần!</p>
+        <a class="dl-btn" href="https://discord.gg/TZRfuhbqJA" target="_blank" rel="noopener">Vào Discord</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">📰 Cập nhật gần đây</h2>
+    <div class="grid grid-2">
+      <div class="news-card">
+        <span class="news-date">📅 Hôm nay</span>
+        <h3>🌟 Phiên bản 1.0 chính thức</h3>
+        <p>20+ NPC, 50+ vật phẩm, đa nền tảng Web/Android/iOS.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-date">📅 Tuần trước</span>
+        <h3>🎉 Sự kiện Halloween</h3>
+        <p>Sự kiện Halloween kéo dài 7 ngày với phần thưởng bí ẩn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">🌱 Nông Trại Vui Vẻ</div>
+      <p>Game nông trại pixel made with ❤️ in Vietnam</p>
+    </div>
+    <div>
+      <h4>Liên kết</h4>
+      <a href="/play">Chơi ngay</a>
+      <a href="#features">Tính năng</a>
+      <a href="/tai-game.html">Tải game</a>
+      <a href="/huong-dan.html">Hướng dẫn</a>
+    </div>
+    <div>
+      <h4>Cộng đồng</h4>
+      <a href="https://discord.gg/TZRfuhbqJA" target="_blank" rel="noopener">Discord</a>
+      <a href="#donate">Ủng hộ</a>
+    </div>
+    <div>
+      <h4>Liên hệ</h4>
+      <p>Email: admin@nongtrai.vn</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Nông Trại Vui Vẻ • Made with ❤️
+  </div>
+</footer>
+
+<script>
+// Live online counter
+fetch('/api/health').then(r=>r.json()).then(d=>{
+  const el=document.getElementById('stat-online');
+  if(el) el.textContent=d.online||0;
+}).catch(()=>{});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+  });
+});
+</script>
+</body>
+</html>

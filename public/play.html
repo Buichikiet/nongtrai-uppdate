@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>▶ Chơi Nông Trại Vui Vẻ</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #5fb84a, #a8e886);
+  min-height: 100vh; display: flex; flex-direction: column;
+  color: white;
+}
+.topbar {
+  background: rgba(0,0,0,0.25); padding: 14px 20px;
+  display: flex; align-items: center; gap: 16px;
+  backdrop-filter: blur(10px);
+}
+.topbar a { color: white; text-decoration: none; opacity: .8; }
+.topbar a:hover { opacity: 1; }
+.topbar h1 { font-size: 20px; flex: 1; }
+.frame-wrap {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.game-frame {
+  background: white; border-radius: 18px; padding: 6px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  width: 100%; max-width: 1024px;
+}
+iframe {
+  width: 100%; height: 70vh; min-height: 500px;
+  border: none; border-radius: 12px; display: block;
+}
+.controls {
+  text-align: center; padding: 20px;
+  background: rgba(0,0,0,0.15);
+}
+.btn {
+  display: inline-block; padding: 12px 24px;
+  background: white; color: #3a8a2a;
+  border-radius: 10px; font-weight: 700;
+  text-decoration: none; margin: 4px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+  transition: all .15s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(2px); box-shadow: 0 2px 0 rgba(0,0,0,0.2); }
+@media (max-width: 600px) {
+  iframe { height: 60vh; min-height: 400px; }
+  .topbar h1 { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="/">← Trang chủ</a>
+  <h1>🌱 Nông Trại Vui Vẻ – Đang chơi</h1>
+  <a href="https://discord.gg/TZRfuhbqJA" target="_blank" rel="noopener">💬 Discord</a>
+</div>
+<div class="frame-wrap">
+  <div class="game-frame">
+    <iframe src="/" allow="autoplay; fullscreen"></iframe>
+  </div>
+</div>
+<div class="controls">
+  <a href="/" target="_blank" class="btn">🔲 Mở cửa sổ mới</a>
+  <a href="/tai-game.html" class="btn">📱 Tải app</a>
+  <a href="/huong-dan.html" class="btn">📖 Hướng dẫn</a>
+</div>
+</body>
+</html>
